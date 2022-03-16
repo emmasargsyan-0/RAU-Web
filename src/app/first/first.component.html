@@ -1,0 +1,22 @@
+<h1>First works!</h1>
+
+<h2>Interpolation</h2>
+<p>The sum of 1 + 1 is {{1 + 1}}.</p>
+<p>{{getName()}}</p>
+<p>{{name}}</p>
+
+
+<h2>Property binding</h2>
+<input type="text"  value="propertyValue">
+
+<h2>Event binding</h2>
+<button (click)="clickFunction()">Click</button>
+
+<h2>Template variables</h2>
+<input #phone placeholder="phone number"/>
+<button type="button" (click)="callPhone(phone.value)">Call</button>
+
+<h2>Two-Way binding</h2>
+<input type="text" [(ngModel)]="twoWayStr">
+{{twoWayStr}}
+
