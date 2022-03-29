@@ -4,15 +4,25 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import {FormsModule} from '@angular/forms';
+import { ListComponent } from './list/list.component';
+import {MatListModule, MatTableModule} from '@angular/material';
+import { TableComponent } from './table/table.component';
+import { FirstpipePipe } from './firstpipe.pipe';
+import {MyserviceService} from './myservice.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    ListComponent,
+    TableComponent,
+    FirstpipePipe
   ],
   imports: [
     BrowserModule,
+    MatListModule,
+    MatTableModule,
     FormsModule  // we need this for [(ngModel)]
   ],
   providers: [],
