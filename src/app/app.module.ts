@@ -9,6 +9,7 @@ import {MatListModule, MatTableModule} from '@angular/material';
 import { TableComponent } from './table/table.component';
 import { FirstpipePipe } from './firstpipe.pipe';
 import {MyserviceService} from './myservice.service';
+import { FirstDirDirective } from './first-dir.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MyserviceService} from './myservice.service';
     SecondComponent,
     ListComponent,
     TableComponent,
-    FirstpipePipe
+    FirstpipePipe,
+    FirstDirDirective
   ],
   imports: [
     BrowserModule,

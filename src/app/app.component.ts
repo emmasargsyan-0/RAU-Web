@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public field: boolean = false;
+  public names = ['name1', 'name2'];
 }

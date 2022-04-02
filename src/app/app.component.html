@@ -1,7 +1,16 @@
-<!--<app-first></app-first>-->
-<!--<br>-->
-<!--<br>-->
-<!--<div app-second></div>-->
+<app-first [newStr1]="'test string'"></app-first>
+<br>
+<br>
+<div app-second></div>
 <app-table></app-table>
 
-<!--<div> {{ 2 | firstpipe : 5}}</div>-->
+<div> {{ 2 | firstpipe : 5}}</div>
+
+<div appFirstDir="'blue'" color2="'red'">
+  test dev
+</div>
+
+
+<div *ngFor="let i of names">
+ <h1>{{i}}</h1>
+</div>
